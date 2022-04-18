@@ -1,0 +1,175 @@
+html {
+	background-color: #EFEFEF;
+}
+
+body {
+	width: 960px;
+	margin: 0 auto;
+	font-size: 13pt;
+}
+
+header {
+	padding-top: 32px;
+	border-bottom: 1px solid #CCC;
+}
+
+header > picture.logo {
+	display: block;
+	text-align: center;
+	line-height: 0;
+}
+
+header > picture.logo img {
+	width: 256px;
+}
+
+header > h2 {
+	margin: 0 0 8px 0;
+	text-align: center;
+	font-size: 0.9em;
+	font-family: serif;
+	font-weight: normal;
+}
+
+header > nav {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+
+header > nav > ul {
+	display: table-row;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+header > nav > ul > li {
+	display: table-cell;
+	font-size: initial;
+	text-align: center;
+}
+
+header > nav > ul > li > a {
+	display: inline-block;
+	width: 100%;
+	padding: 16px 0;
+	color: inherit;
+	text-decoration: none;
+}
+
+header > nav > ul > li > a:hover {
+	background-color: #101010;
+	color: #EFEFEF;
+}
+
+main {
+	width: 100%;
+	line-height: 2em;
+}
+
+main p {
+	margin: 0 0 24px 0;
+}
+
+main > section#introduction {
+	padding: 64px 0px;
+	text-align: center;
+}
+
+main > section#introduction > h1 {
+	margin-bottom: 32px;
+}
+
+main > section#introduction > p {
+	margin-bottom: 32px;
+}
+
+main > section#introduction > h1,
+main > section#introduction > h2,
+main > section#introduction > h3,
+main > section#introduction > h4,
+main > section#introduction > h5,
+main > section#introduction > h6,
+main > section#introduction > p
+{
+	padding: 0 64px;
+}
+
+footer {
+	padding: 16px 0px 32px 0px;
+	border-top: 1px solid #CCC;
+}
+
+footer > section#footer-links {
+	font-size: 0.8em;
+}
+
+footer > section#footer-links > ul {
+	padding-left: 0;
+	list-style: none;
+}
+
+footer > section#footer-links > ul > li {
+	line-height: 3em;
+}
+
+footer > section#footer-links > ul > li > a {
+	padding: 8px 8px;
+	color: inherit;
+	text-decoration: none;
+}
+
+footer > section#footer-links > ul > li > a:visited {
+	color: #484848;
+}
+
+footer > section#footer-links > ul > li > a:hover {
+	background-color: #101010;
+}
+
+footer > section#footer-links > ul > li > a:hover,
+footer > section#footer-links > ul > li > a:hover:visited
+{
+	color: #EFEFEF;
+}
+
+footer > p {
+	text-align: center;
+	font-size: 0.9em;
+}
+
+@media not screen and (min-width: 1024px) {
+	body {
+		width: auto;
+		margin: 0 32px;
+	}
+}
+
+@media not screen and (min-width: 768px) {
+	body {
+		font-size: 10.5pt;
+	}
+
+	header > nav > ul,
+	header > nav > ul > li
+	{
+		display: block;
+		font-size: 1.0em;
+	}
+
+	main > section#introduction > h1,
+	main > section#introduction > h2,
+	main > section#introduction > h3,
+	main > section#introduction > h4,
+	main > section#introduction > h5,
+	main > section#introduction > h6,
+	main > section#introduction > p
+	{
+		padding: 0;
+	}
+
+	footer > section#footer-links > ul > li > a {
+		display: block;
+	}
+}
